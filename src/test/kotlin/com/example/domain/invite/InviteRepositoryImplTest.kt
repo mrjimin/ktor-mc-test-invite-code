@@ -66,7 +66,7 @@ class InviteRepositoryImplTest {
     @Test
     fun `존재하지 않는 코드로 조회하면 null을 반환한다`() {
         val result = repository.findByCode(
-            InviteCode("ZZZZZ"),
+            InviteCode("ZZZZZZZ"),
         )
 
         assertNull(result)

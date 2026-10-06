@@ -17,6 +17,8 @@ value class InviteCode(
     val value: String,
 ) {
     init {
-        require(value.length == INVITE_CODE_LENGTH)
+        require(value.length == INVITE_CODE_LENGTH) {
+            "value should be $INVITE_CODE_LENGTH"
+        }
     }
 }

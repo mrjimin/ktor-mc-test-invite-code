@@ -20,6 +20,13 @@ dependencies {
     implementation(ktorLibs.server.contentNegotiation)
     implementation(ktorLibs.server.core)
     implementation(ktorLibs.server.netty)
+    implementation(ktorLibs.server.auth)
+    implementation(ktorLibs.server.sessions)
+
+    implementation(ktorLibs.client.core)
+    implementation(ktorLibs.client.cio)
+    implementation(ktorLibs.client.contentNegotiation)
+
     implementation(exposedLibs.core)
     implementation(exposedLibs.jdbc)
     implementation(exposedLibs.kotlin.datetime)

@@ -8,5 +8,4 @@ data class UserInfo(
     val id: UInt, // DB ID
     val name: String, // displayName
     val uuid: Uuid, // MC UUID
-) {
-}
+)

@@ -1,10 +1,12 @@
 package com.example
 
+import com.example.domain.discord.configureDiscordOAuth
 import io.ktor.server.application.*
 
 fun Application.configure() {
-    configureSerialization()
     configureKoin()
+    configureSerialization()
     configureExposed()
     configureRouting()
+    configureDiscordOAuth()
 }
